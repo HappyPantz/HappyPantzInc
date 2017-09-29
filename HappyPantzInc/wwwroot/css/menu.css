@@ -1,0 +1,135 @@
+nav {
+    position: sticky;
+    padding: 0.3em;
+    width: 70em;
+    height: 3.9em;
+    margin: auto;
+    background: #000;
+    overflow: visible;
+    z-index: 100;
+}
+
+nav li.menu-item {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0.1em;
+    font: bold 1.3em Futura, sans-serif;
+    color: #ddd;
+    box-shadow: 0 0 2px #000;
+}
+nav li.menu-item > a.button {
+    position: relative;
+    display: block;
+    padding: 0.7em 0em;
+    text-align: center;
+    width: 6.5em;
+    text-decoration: none;
+    color: #ddd;
+    background: #000;
+    
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+nav li.menu-item:hover > a.button {
+    text-decoration: underline;
+    color: #000;
+    background: #ddd;
+}
+
+menu.sub-menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0em;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+menu.sub-menu li.sub-item {
+    position: relative;
+    display: block;
+    color: #000;
+    background-size: cover;
+    opacity: 0;
+}
+menu.sub-menu li.sub-item a {
+    position: relative;
+    display: block;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #000;
+    overflow: hidden;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #888;
+    
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+menu.sub-menu li.sub-item a:hover {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #fff;
+}
+li.sub-item:not(.selected) a {
+    height: 1.6em;
+}
+li.sub-item a span {
+    position: relative;
+    display: block;
+    padding: 0.3em;
+    background: #ddd;
+}
+li.sub-item a:hover > span {
+    background: rgba(200, 200, 200, 0.8);
+}
+li.menu-item:hover > menu.sub-menu {
+    background: #ddd;
+}
+li.menu-item:hover > menu.sub-menu li.sub-item{
+    opacity: 1;
+}
+
+li.sub-item.selected a {
+    height: 4.1em;
+}
+
+nav li.home-item {
+    float: left;
+    display: inline-block;
+    right: 0em;
+    top: 1em;
+}
+nav h1 {
+    position: relative;
+    float: left;
+    display: inline-block;
+    font: bold 1.8em Futura, sans-serif;
+    color: #ddd;
+}
+nav h1#cName {
+    margin-top: 0.2em;
+    font-size: 2.2em;   
+}
+nav h1#cLogo {
+    margin-top: 0.1em;
+    padding-left: 0.2em;
+    font-family: "Comic Sans MS", Komika;
+}
+
+/** Login **/
+ul.nav.navbar-nav.navbar-right li a {
+    color: #ddd;
+}
+ul.nav.navbar-nav.navbar-right li a:hover {
+    background: none;
+}

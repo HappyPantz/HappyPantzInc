@@ -1,0 +1,12 @@
+#content-area {
+    position: relative;
+    display: block;
+    width: 70em;
+    margin: auto;
+}
+#main-content {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 20em;
+}

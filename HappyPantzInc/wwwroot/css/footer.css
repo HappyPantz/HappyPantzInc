@@ -1,0 +1,38 @@
+footer {
+    position: relative;
+    display: block;
+    width: 70em;
+    margin: auto;
+    min-height: 3em;
+    color: #ddd;
+    background: #000;
+    flex: 1;
+}
+
+#footer-content {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    margin: auto;
+    padding: 1em 0em;
+    width: 70em;
+}
+
+#footer-content li{
+    position: relative;
+    display: table-cell;
+    margin: auto;
+}
+#footer-content li a {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 5em;
+    font: 0.8em Futura, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #aaa;
+}
+#footer-content li a:hover {
+    color: #ddd;
+}
